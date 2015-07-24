@@ -38,6 +38,10 @@ public class Bicycle {
     public void setGear(int newValue) {
         gear = newValue;
     }
+    
+    public void setSpeed(int newValue){
+    	speed = newValue;
+    }
         
     public int getSpeed() {
         return speed;
