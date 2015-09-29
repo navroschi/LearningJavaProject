@@ -36,5 +36,6 @@ public class BycicleDemo {
         }
         bike3.printStates();
         bike4.printStates();
+        System.out.println(bike3.getID());
     }
 }

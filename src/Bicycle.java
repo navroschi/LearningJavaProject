@@ -5,6 +5,9 @@ public class Bicycle {
     private int cadence;
     private int speed;
     private int gear;
+    private int id;
+    private static int numberOfBicycles = 0;
+    public static int numberOfBicycles2 = 0;
     
     // the bicycle class has 
     // two constructors
@@ -12,6 +15,7 @@ public class Bicycle {
     	gear = startGear;
     	cadence = startCadence;
     	speed = startSpeed;
+    	id = ++numberOfBicycles;
     }
     
     public Bicycle() {
@@ -21,7 +25,7 @@ public class Bicycle {
     }
     
     //Bicycle class has
-    // six methods
+    // ten methods
     
     public int getCadence() {
         return cadence;
@@ -57,5 +61,9 @@ public class Bicycle {
     
     public void printStates() {
     	System.out.println("The speed we are running is " + speed + " in the gear " + gear + " with cadence " + cadence);
+    }
+    
+    public int getID() {
+        return id;
     }
 }
